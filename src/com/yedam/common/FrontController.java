@@ -12,6 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.yedam.member.web.MemberJoin;
 import com.yedam.member.web.MemberJoinForm;
+import com.yedam.member.web.MemberLogOut;
+import com.yedam.member.web.MemberLogin;
+import com.yedam.member.web.MemberLoginForm;
+import com.yedam.notice.web.Notice;
+import com.yedam.notice.web.NoticeList;
+import com.yedam.notice.web.NoticeUpdate;
 
 public class FrontController extends HttpServlet {
 	private HashMap<String, DbCommand> map = new HashMap<>();
@@ -22,6 +28,14 @@ public class FrontController extends HttpServlet {
 		map.put("/main.do", new MainPage());
 		map.put("/memberJoinForm.do", new MemberJoinForm());
 		map.put("/memberJoin.do", new MemberJoin());
+		map.put("/memberLoginForm.do", new MemberLoginForm());
+		map.put("/memberLogin.do", new MemberLogin());
+		map.put("/memberLoginOut.do", new MemberLogOut());
+
+		//공지사항
+		map.put("/noticeList.do", new NoticeList());
+		map.put("/notice.do", new Notice());
+		map.put("/noticeUpdate.do", new NoticeUpdate());
 	}
 
 	@Override
