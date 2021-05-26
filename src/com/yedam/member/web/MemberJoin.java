@@ -30,6 +30,7 @@ public class MemberJoin implements DbCommand {
 		service.insertMember(vo);
 		
 		session.setAttribute("id", id);
+		session.setAttribute("uname", name);
 		session.setAttribute("member", vo);
 		
 		return "main/main.tiles";

@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     <%@ taglib prefix ="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-	<a class="navbar-brand" href="#">Navbar</a>
+	<a class="navbar-brand" href="main.do">Navbar</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -11,7 +11,7 @@
 
 			<li class="nav-item"><a class="nav-link" href="noticeListPaging.do">공지사항</a> </li>
 
-			<li class="nav-item"><a class="nav-link" href="#">자유게시판</a></li>
+			<li class="nav-item"><a class="nav-link" href="bulletinListPaging.do">자유게시판</a></li>
 
 			<li class="nav-item"><a class="nav-link" href="#">소개하는 글</a></li>
 
@@ -27,7 +27,7 @@
 				<li class="nav-item"><a class="nav-link">Guest 님 어서오소서</a></li>
 			</c:if>
 			<c:if test="${!empty id }">
-				<li class="nav-item"><a class="nav-link">${id } 님 어서오소서</a></li>
+				<li class="nav-item"><a class="nav-link">${uname } 님 어서오소서</a></li>
 			</c:if>
 		</ul>
 	</div>

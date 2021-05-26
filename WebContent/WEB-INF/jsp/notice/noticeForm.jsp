@@ -27,7 +27,7 @@
 		</tr>
 	</table>
 	<div>
-		<button type="button" onclick="location.href='noticeList.do'">목록보기</button>
+		<button type="button" onclick="location.href='noticeListPaging.do'">목록보기</button>
 		<button type="button" onclick="noticeInsert()">등록</button>
 		<button type="reset">취소</button>
 	</div>

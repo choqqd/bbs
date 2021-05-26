@@ -25,11 +25,7 @@
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
 </style>
-<script>
-function goPage(page){
-	location.href = "noticeListPaging.do?page=" + page;
-}
-</script>
+
 </head>
 <body>
 			<div class="pagination">

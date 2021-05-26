@@ -10,6 +10,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.yedam.bulletin.web.BulletinList;
+import com.yedam.bulletin.web.BulletinListPageing;
+import com.yedam.bulletin.web.BulletinUpdate;
+import com.yedam.bulletin.web.bulletinForm;
+import com.yedam.bulletin.web.bulletinInsert;
+import com.yedam.bulletin.web.bulltein;
 import com.yedam.member.web.MemberJoin;
 import com.yedam.member.web.MemberJoinForm;
 import com.yedam.member.web.MemberLogOut;
@@ -44,6 +50,14 @@ public class FrontController extends HttpServlet {
 		map.put("/noticeUpdate.do", new NoticeUpdate());
 		map.put("/noticeInsert.do", new NoticeInsert());
 		map.put("/noticeDelete.do", new NoticeDelete());
+		
+		//자유게시판
+		map.put("/bulletinList.do", new BulletinList());
+		map.put("/bulletinForm.do", new bulletinForm());
+		map.put("/bulletinInsert.do", new bulletinInsert());
+		map.put("/bulletin.do", new bulltein());
+		map.put("/bulletinUpdate.do", new BulletinUpdate());
+		map.put("/bulletinListPaging.do", new BulletinListPageing());
 	}
 
 	@Override
