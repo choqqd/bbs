@@ -28,6 +28,9 @@ import com.yedam.notice.web.NoticeInsert;
 import com.yedam.notice.web.NoticeList;
 import com.yedam.notice.web.NoticeListPaging;
 import com.yedam.notice.web.NoticeUpdate;
+import com.yedam.product.web.AddCart;
+import com.yedam.product.web.CartList;
+import com.yedam.product.web.ProductList;
 
 public class FrontController extends HttpServlet {
 	private HashMap<String, DbCommand> map = new HashMap<>();
@@ -35,6 +38,14 @@ public class FrontController extends HttpServlet {
 	@Override
 	public void init(ServletConfig config) throws ServletException {
 		// 요청페이지 - 실행컨트롤러
+		//상품관련
+		map.put("/index.do", new IndexPage());
+		map.put("/productList.do", new ProductList());
+		map.put("/addCart.do",new AddCart());
+		map.put("/cartList.do", new CartList());
+		
+		
+		//회원관리
 		map.put("/main.do", new MainPage());
 		map.put("/memberJoinForm.do", new MemberJoinForm());
 		map.put("/memberJoin.do", new MemberJoin());
