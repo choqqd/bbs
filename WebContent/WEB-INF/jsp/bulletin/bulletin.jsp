@@ -11,7 +11,7 @@
 <script>
 	$(function(){
 		CKEDITOR.replace('content',{
-			filebrowserUploadUrl: '${pageContext.request.contextPath }/fileUpload',
+			filebrowserUploadUrl: '${pageContext.request.contextPath }/uploadImage',
 			height: '600px',
 			width: '800px'
 		});
@@ -47,8 +47,7 @@
 				</tr>
 				<tr>
 					<th>내용</th>
-					<td colspan="7"><textarea id="content" name="content" rows="6"
-							cols="90">${bulletin.content }</textarea></td>
+					<td colspan="7"><textarea id="content" name="content" rows="6" cols="90">${bulletin.content }</textarea></td>
 				</tr>
 			</table>
 			<div>
