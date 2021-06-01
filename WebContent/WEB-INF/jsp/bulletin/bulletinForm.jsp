@@ -51,7 +51,7 @@
 			<div>
 				<button type="button" onclick="formCheck()">등록</button>
 				<button type="reset">취소</button>
-				<button type="button" onclick="location.href='main.do'">목록보기</button>
+				<button type="button" onclick="location.href='designerinfoPage.do'">목록보기</button>
 			</div>
 		</form>
 	</div>
